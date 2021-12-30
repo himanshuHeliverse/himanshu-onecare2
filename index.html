@@ -95,6 +95,15 @@
             font-family: "Montserrat", sans-serif;
         }
 
+        .abso {
+            text-decoration: none;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+        }
+
         .mob {
             display: none;
         }
@@ -139,7 +148,7 @@
         }
 
         .pink {
-            color: #F0637A
+            color: #F07162;
         }
 
         input:focus {
@@ -148,31 +157,28 @@
 
         h1 {
             margin: 20px 0px;
-            font-size: 60px;
+            font-size: 44px;
             line-height: 67px;
-
-
-
         }
 
         h2 {
             margin: 15px 0px;
-            font-size: 39px;
-            line-height: 56px;
+            font-size: 30px;
+            line-height: 30px;
         }
 
         h3 {
-            font-size: 25px;
+            font-size: 18px;
+            line-height: 25px;
         }
 
         h4 {
-            font-size: 20px;
+            font-size: 16px;
         }
 
         header {
             width: 100%;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-
         }
 
         header nav div {
@@ -193,6 +199,12 @@
 
         .logo {
             width: 20%;
+        }
+
+        #top-section h1 {
+            font-size: 62px;
+            line-height: 67px;
+            margin: 30px 0px;
         }
 
         #top-section {
@@ -237,7 +249,6 @@
             padding: 40px;
         }
 
-
         #Success-Stories,
         #Diabetologists-container,
         #diagnosis {
@@ -266,7 +277,6 @@
         #diagnosis p {
             font-Size: 18px;
             line-height: 28px;
-
         }
 
         #Diabetes-care>div div:first-child,
@@ -313,7 +323,7 @@
         }
 
         .Diabetologists-logo {
-            width: 40%;
+            width: 60%;
         }
 
         .slid {
@@ -321,8 +331,9 @@
             margin: 20px;
             flex-direction: column;
             align-items: center;
-            padding: 70px;
-            height: 90%;
+            padding: 20px;
+            height: 100%;
+            position: relative;
             background: white;
 
         }
@@ -330,7 +341,6 @@
         .slide {
             margin: 30px;
             padding: 30px;
-
             height: 100%;
             background-color: white;
         }
@@ -376,7 +386,7 @@
             color: white;
             max-width: 80%;
             text-align: center;
-            padding: 25px;
+            padding: 35px;
 
         }
 
@@ -412,11 +422,12 @@
             }
 
             h3 {
-                font-size: 20px;
+                font-size: 15px;
+                line-height: 20px;
             }
 
             h2 {
-                font-size: 30px;
+                font-size: 25px;
                 line-height: 30px;
             }
 
@@ -431,6 +442,17 @@
                 margin: 10px 0px;
             }
 
+            #top-section h1 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+
+            .slid p {
+                font-size: 11px;
+                line-height: 14px;
+            }
+
             #diagnosis p {
                 font-Size: 15px;
                 line-height: 18px;
@@ -443,7 +465,7 @@
 
 
             .slid {
-                height: 70%;
+                height: 85%;
                 padding: 25px;
             }
 
@@ -452,17 +474,12 @@
 
 
         @media screen and (max-width:800px) {
-            .mob {
-                display: block;
-            }
+
 
             .form {
                 margin: 0;
             }
 
-            .web {
-                display: none;
-            }
 
             #diagnosis>div,
             #Patients-Journey>div,
@@ -492,7 +509,11 @@
             }
 
             .mobile-logos {
-                width: 100%;
+                width: 75%;
+            }
+
+            .mobile-logos-details {
+                padding: 10px;
             }
 
             #Patients-Journey>div {
@@ -515,13 +536,7 @@
                 margin: 0px 100px;
             }
 
-            .slid {
-                height: 80%;
-            }
 
-            .caption {
-                font-size: 11px;
-            }
 
             #Diabetes-care-form h1 {
                 font-size: 25px;
@@ -538,31 +553,65 @@
 
         @media screen and (max-width:450px) {
             h1 {
-
-                font-size: 25px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 54px;
+                margin: 0;
             }
 
-            #diagnosis p {
+            .web {
+                display: none;
+            }
+
+            .mob {
+                display: block;
+            }
+
+            #top-section h1 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            #top-section div:first-child {
+                padding: 0px;
+            }
+
+            input {
+                font-size: 12px;
+                padding: 10px;
+                height: 37px;
+                margin: 4px 0px;
+            }
+
+            #top-section .form {
+                padding: 0px 50px;
+            }
+
+            /* #diagnosis p {
                 font-Size: 12px;
-                line-height: 18px;
-            }
+                text-align: center;
+                line-height: 12px;
+            } */
 
             h2 {
-                font-size: 18px;
+                font-size: 16px;
+                text-align: center;
+                line-height: 19px;
             }
 
             h3 {
-                font-size: 15px;
-                line-height: 20px;
+                font-size: 16px;
+                line-height: 24px;
             }
 
             h4 {
-                font-size: 13px;
+                font-size: 12px;
+                line-height: 16px;
+                margin: 0;
             }
 
             p {
-                font-size: 10px;
+                font-size: 12px;
+                line-height: 16px;
             }
 
             #top-section h1,
@@ -570,12 +619,18 @@
                 text-align: center;
             }
 
-            #diagnosis p {
-                font-Size: 13px;
-                line-height: 18px;
+            #patient-details h1 {
+                font-size: 18px;
+                line-height: 48px;
+                margin: 0;
+                text-align: center;
             }
-
-
+/* 
+            #patient-details p {
+                font-size: 8px;
+                margin: 0;
+                line-height: 26px;
+            } */
 
             #Diabetes-care {
                 padding: 10px 0px;
@@ -583,56 +638,85 @@
 
             #Patients-Journey .sli div {
 
-                padding: 0px 10px;
+                padding: 0px 30px;
             }
 
             .mobile-logos {
-                width: 60%;
+                width: 80%;
             }
 
-            input {
-                padding: 10px;
-                font-size: 12px;
-                margin: 10px 0px;
+            .sli.up {
+                margin-top: 50px;
+            }
+
+            .sli {
+                margin: 0;
             }
 
             #Patients-Journey .sli {
                 justify-content: flex-end;
-                margin: 0px 70px 50px 70px;
+                margin: 0px 40px 50px 40px;
                 flex-direction: row-reverse;
             }
 
             #Patients-Journey .sli.up {
 
-                margin: 0px 70px;
+                margin: 0px 40px;
             }
 
-            .slid p {
-                font-size: 11px;
-                line-height: 16px;
+            .slid {
+                /* height: 50%; */
+                margin:  20px 8px;
+                padding: 15px;
             }
+
+    
+
+            .slid h3 {
+                font-size: 16px;
+                line-height: 20px;
+         
+            }
+
 
             .slide {
-                height: 75%;
-            }
-
-            #patient-details>div {
-
-                padding: 18px;
+                height: 70%;
+                margin: 20px 4px;
+                padding: 15px;
             }
 
             .Diabetologists-logo {
-                width: 70%;
+    width: 50%;
+}
+            #patient-details>div {
+
+                padding: 0px;
             }
 
+
+      #Diabetologists-container h1 {
+                font-size: 20px;
+                line-height: 27px;
+                margin: 9px 0px;
+            }
+/* 
             .mobile-logos-details p {
-                font-size: 15px;
+                font-size: 12px;
+                line-height: 12px;
+            } */
+
+            .mobile-logos-details {
+                padding: 7px 10px;
             }
 
-            #fixed {
-                position: fixed;
-                z-index: 1;
-                bottom: 10px;
+            /* #Diabetologists>div, */
+            #mobile-logos-wrapper>div {
+                max-height: 55vh;
+            }
+
+            #visit h3 {
+                font-size: 12px;
+                line-height: 10px;
             }
 
             #Diabetes-care-form h1 {
@@ -643,18 +727,62 @@
 
             #Diabetes-care-form form input {
                 padding: 8px;
-
                 margin-top: 5px;
-                font-size: 8px;
+                font-size: 9px;
+            }
+
+       
+            .slid p, .caption {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            .abso {
+                padding: 4px;
             }
         }
     </style>
+<script
+async
+custom-element="amp-analytics"
+src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+></script>
 
 
 
 
 
 <body>
+    	<!-- facebook pixel -->
+
+		<amp-analytics type="facebookpixel" id="facebook-pixel">
+			<script type="application/json">
+				{
+					"vars": {
+						"pixelId": "330808595268395"
+					},
+					"triggers": {
+						"trackPageview": {
+							"on": "visible",
+							"request": "pageview"
+						},
+						"formSubmit": {
+							"on": "amp-form-submit-success",
+							"request": "event",
+							"vars": {
+								"eventName": "lead"
+							}
+						}
+					}
+				}
+			</script>
+		</amp-analytics>
+		<!-- Google Tag Manager -->
+		<amp-analytics
+			config="https://www.googletagmanager.com/amp.json?id=GTM-TZ45KRF&gtm.url=SOURCE_URL"
+			data-credentials="include"
+		></amp-analytics>
+
     <header>
         <nav>
             <a href="/" class="logo">
@@ -664,7 +792,7 @@
 
 
             <div>
-                <h4 style="margin-right:10px ;" class="blue-color">Call Us Now </h4>
+                <h3 style="margin-right:10px ;" class="blue-color">Call Us Now </h3>
                 <a href="tel:08045687460"><input class="button blue" type="button" value="08045687460" /></a>
 
             </div>
@@ -674,13 +802,13 @@
 
         <div>
             <h1 class="orange">Overcome Diabetes & <span class="red">Live Confidently</span></h1>
-            <h3 class="gray">With Healthy Blood Sugars and Less Medication</h3>
+            <h2 class="gray">With Healthy Blood Sugars and Less Medication</h2>
             <form class="form" method="post" action-xhr="https://onecare.co.in/wp-admin/admin-ajax.php" target="_top">
 
-                <input type="text"  name="FullName" placeholder="Full Name" required>
+                <input type="text" name="FullName" placeholder="Full Name" required>
 
 
-                <input type="tel" pattern="[0-9]{10}" maxlength="10"placeholder="Phone" required>
+                <input type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="Phone" required>
 
                 <input class="blue button" type="submit" value="Book Free Consultation">
 
@@ -841,9 +969,8 @@
     <section id="mobile-logos-wrapper">
         <h1 class="gray center-text">What do we offer at OneCare</h1>
         <div>
-            <amp-base-carousel height="750" layout="fixed-height"
-                visible-count="(min-width: 1150px) 5, (min-width: 600px) 3, 1"
-                advance-count="(min-width: 1150px) 5, (min-width: 600px) 3, 1">
+            <amp-base-carousel height="750" layout="fixed-height" visible-count="(min-width: 1150px) 5,3"
+                advance-count="(min-width: 1150px) 5,3">
                 <div>
                     <div class="sli">
                         <div class="mobile-logos">
@@ -907,14 +1034,15 @@
     </section>
 
     <section id="Diabetologists-container">
+        <h1 class="center-text gray">
+            Consult with our Expert team of Endocrinologists & Diabetologists <span class="pink"> In
+                Bangalore</span>
+        </h1>
         <div id="Diabetologists">
-            <h1 class="center-text gray">
-                Consult with our Expert team of Endocrinologists & Diabetologists <span class="pink"> In
-                    Bangalore</span>
-            </h1>
+          
             <div>
-                <amp-base-carousel height="700" layout="fixed-height" visible-count="(min-width: 750px) 2,  1"
-                    advance-count="(min-width: 750px) 2,  1">
+                <amp-base-carousel height="700" layout="fixed-height" visible-count="(min-width: 760px) 3, 1"
+                    advance-count='(min-width: 760px) 3, 1'>
                     <div>
                         <div class="slid">
                             <div class="Diabetologists-logo">
@@ -930,6 +1058,7 @@
                                 Medicine from PGIMER, Chandigarh, India in 2012 and DM - Endocrinology from The Tamil
                                 Nadu Dr. M.G.R. Medical University (TNMGRMU) in 2019.
                             </p>
+                            <a href="#top-section" class="blue abso  white">Book Consultation</a>
                         </div>
                     </div>
                     <div>
@@ -947,6 +1076,29 @@
                                 several years of work experience and the expertise in handling all kinds of patients, he
                                 is the best choice for all kinds of minor and major health ailments.
                             </p>
+                            <a href="#top-section" class="blue abso  white">Book Consultation</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slid">
+                            <div class="Diabetologists-logo">
+                                <amp-img layout="responsive" src="./assest/female.webp" width="1.2" height="1"
+                                    alt="logo"></amp-img>
+                            </div>
+                            <h3 class="pink">
+                                Dr. Lavanya
+                                MBBS (General physician)
+
+                            </h3>
+                            <p>
+
+
+                                Dr. Lavanya Kamatam is a Diabetologist and a Family physician with Fellowship in
+                                Diabetes Care. She has also Completed Diploma in Family Medicine. She is currently
+                                practicing at OneCare Diabetes Clinic and Family Multispeciality Clinic.
+
+                            </p>
+                            <a href="#top-section" class="blue  abso white">Book Consultation</a>
                         </div>
                     </div>
                 </amp-base-carousel>
@@ -1002,8 +1154,8 @@
         <div>
             <div>
                 <amp-base-carousel height="330" layout="fixed-height"
-                    visible-count="(min-width: 760px) 3, (min-width: 450px) 2, 1"
-                    advance-count="(min-width: 760px) 3, (min-width: 450px) 2, 1">
+                visible-count="(min-width: 760px) 3, (min-width: 450px) 2, 1"
+                advance-count="(min-width: 760px) 3, (min-width: 450px) 2, 1">
                     <div>
                         <div class="slide">
                             <div class="success-icon-wrapper">
@@ -1011,7 +1163,7 @@
                                 <div class="know-more-icon">
                                     <amp-img src="./assest/Ellipse 1.webp" width="45" height="45" alt=""></amp-img>
                                 </div>
-                                <h4 class="pink">Preeti Sharma, 31</h4>
+                                <h3 class="pink">Preeti Sharma, 31</h3>
                             </div>
                             <p class="caption">
                                 OneCare not only helped me reduce my blood sugar levels but also helped me into
@@ -1029,7 +1181,7 @@
                                 <div class="know-more-icon">
                                     <amp-img src="./assest/Ellipse 2.webp" width="45" height="45" alt="logo"></amp-img>
                                 </div>
-                                <h4 class="pink">Satish Kumar, 36</h4>
+                                <h3 class="pink">Satish Kumar, 36</h3>
                             </div>
                             <p class="caption">
                                 My HbA1C levels started to lower down in the first month of the OneCare Program
@@ -1048,7 +1200,7 @@
                                 <div class="know-more-icon">
                                     <amp-img src="./assest/Ellipse 3.webp" width="45" height="45" alt="logo"></amp-img>
                                 </div>
-                                <h4 class="pink">Manoj Sinha, 56</h4>
+                                <h3 class="pink">Manoj Sinha, 56</h3>
                             </div>
                             <p class="caption">
                                 OneCare helped me with a customized diet plan and guided me through every step of
