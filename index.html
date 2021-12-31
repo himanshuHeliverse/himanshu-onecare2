@@ -363,7 +363,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0px 30px;
+            /* margin: 0px 30px; */
         }
 
         .sli.up {
@@ -375,7 +375,7 @@
         }
 
         .mobile-logos {
-            width: 74%;
+            width: 70%;
             position: relative;
             top: 15px;
         }
@@ -386,7 +386,7 @@
             color: white;
             max-width: 80%;
             text-align: center;
-            padding: 35px;
+            padding: 20px;
 
         }
 
@@ -473,7 +473,7 @@
         }
 
 
-        @media screen and (max-width:800px) {
+        @media screen and (max-width:750px) {
 
 
             .form {
@@ -505,6 +505,10 @@
 
             #Patients-Journey .sli div {
                 flex: 1;
+
+            }
+
+            .patients-icons {
                 padding: 0px 20px;
             }
 
@@ -548,6 +552,12 @@
                 margin: 0;
                 margin-top: 12px;
 
+            }
+            
+            .slid p,
+            .caption {
+                font-size: 12px;
+                line-height: 16px;
             }
         }
 
@@ -625,7 +635,8 @@
                 margin: 0;
                 text-align: center;
             }
-/* 
+
+            /* 
             #patient-details p {
                 font-size: 8px;
                 margin: 0;
@@ -636,9 +647,9 @@
                 padding: 10px 0px;
             }
 
-            #Patients-Journey .sli div {
+            .patients-icons {
 
-                padding: 0px 30px;
+                padding-right: 40px;
             }
 
             .mobile-logos {
@@ -661,21 +672,21 @@
 
             #Patients-Journey .sli.up {
 
-                margin: 0px 40px;
+                margin: 0px 20px;
             }
 
             .slid {
                 /* height: 50%; */
-                margin:  20px 8px;
+                margin: 20px 8px;
                 padding: 15px;
             }
 
-    
+
 
             .slid h3 {
                 font-size: 16px;
                 line-height: 20px;
-         
+
             }
 
 
@@ -686,20 +697,22 @@
             }
 
             .Diabetologists-logo {
-    width: 50%;
-}
+                width: 50%;
+            }
+
             #patient-details>div {
 
                 padding: 0px;
             }
 
 
-      #Diabetologists-container h1 {
+            #Diabetologists-container h1 {
                 font-size: 20px;
                 line-height: 27px;
                 margin: 9px 0px;
             }
-/* 
+
+            /* 
             .mobile-logos-details p {
                 font-size: 12px;
                 line-height: 12px;
@@ -730,33 +743,22 @@
                 margin-top: 5px;
                 font-size: 9px;
             }
-
-       
-            .slid p, .caption {
-                font-size: 12px;
-                line-height: 16px;
-            }
-
             .abso {
                 padding: 4px;
             }
         }
     </style>
-<script
-async
-custom-element="amp-analytics"
-src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
-></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 
 
 
 
 <body>
-    	<!-- facebook pixel -->
+    <!-- facebook pixel -->
 
-		<amp-analytics type="facebookpixel" id="facebook-pixel">
-			<script type="application/json">
+    <amp-analytics type="facebookpixel" id="facebook-pixel">
+        <script type="application/json">
 				{
 					"vars": {
 						"pixelId": "330808595268395"
@@ -776,12 +778,10 @@ src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
 					}
 				}
 			</script>
-		</amp-analytics>
-		<!-- Google Tag Manager -->
-		<amp-analytics
-			config="https://www.googletagmanager.com/amp.json?id=GTM-TZ45KRF&gtm.url=SOURCE_URL"
-			data-credentials="include"
-		></amp-analytics>
+    </amp-analytics>
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-TZ45KRF&gtm.url=SOURCE_URL"
+        data-credentials="include"></amp-analytics>
 
     <header>
         <nav>
@@ -1039,7 +1039,7 @@ src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
                 Bangalore</span>
         </h1>
         <div id="Diabetologists">
-          
+
             <div>
                 <amp-base-carousel height="700" layout="fixed-height" visible-count="(min-width: 760px) 3, 1"
                     advance-count='(min-width: 760px) 3, 1'>
@@ -1154,8 +1154,8 @@ src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
         <div>
             <div>
                 <amp-base-carousel height="330" layout="fixed-height"
-                visible-count="(min-width: 760px) 3, (min-width: 450px) 2, 1"
-                advance-count="(min-width: 760px) 3, (min-width: 450px) 2, 1">
+                    visible-count="(min-width: 760px) 3, (min-width: 450px) 2, 1"
+                    advance-count="(min-width: 760px) 3, (min-width: 450px) 2, 1">
                     <div>
                         <div class="slide">
                             <div class="success-icon-wrapper">
